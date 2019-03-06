@@ -1,0 +1,35 @@
+#calculator {
+    padding: 10px;
+    border: black solid 2px;
+    width: 475px;
+    margin: auto;
+    background-color: darkslategrey
+}
+
+#screen {
+    margin: 5px 0;
+    width: 471px;
+    height: 60px;
+    background-color: #82cc2c;
+    border: black solid 2px;
+}
+
+#screenDisplay {
+    text-align: right;
+    margin-right: 5px;
+}
+
+#buttons {
+    width: 475px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #ff5722;
+    margin: 10px 0;
+    padding: 14px;
+    width: 100px;
+}
