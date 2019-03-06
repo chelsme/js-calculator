@@ -45,18 +45,20 @@ document.addEventListener('DOMContentLoaded', function () {
             result = 0
             disp.innerText = result
         } else if (parseFloat(val) || val == 0 || val.includes('.')) {
-            screenDisplay = ''
             if (num1 == '') {
                 screenDisplay += val
                 disp.innerText = screenDisplay
-                num1 = screenDisplay
             } else if (num2 == '') {
                 screenDisplay += val
-                num2 = screenDisplay
-                disp.innerText = num2
+                disp.innerText = screenDisplay
             }
         } else if (val.includes('+') || val.includes('-') || val.includes('*') || val.includes('/')) {
             math = val
+            if (num1 == '') {
+                num1 = screenDisplay
+                screenDisplay = ''
+            }
+
             if (num1 != '' && num2 != '') {
                 switch (math) {
                     case '+':
@@ -91,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 disp.innerText = 0
             }
         } else if (val.includes('=')) {
-            // num2 = screenDisplay
+            num2 = screenDisplay
             screenDisplay = ''
             switch (math) {
                 case '+':
