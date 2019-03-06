@@ -11,7 +11,8 @@ h1 {
     border: black solid 2px;
     width: 475px;
     margin: auto;
-    background-color: darkslategrey
+    background-color: darkslategrey;
+    border-radius: 10px;
 }
 
 #screen {
