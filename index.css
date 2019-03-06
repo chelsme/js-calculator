@@ -1,3 +1,11 @@
+html {
+    background-color: #1f1f1f;
+}
+
+h1 {
+    color: #dddddd;
+}
+
 #calculator {
     padding: 10px;
     border: black solid 2px;
@@ -19,7 +27,7 @@
     margin-right: 5px;
 }
 
-#buttons {
+#options, #numbers {
     width: 475px;
     display: flex;
     flex-direction: row;
@@ -27,10 +35,21 @@
     justify-content: space-between;
 }
 
-.button {
+#numbers {
+    width: 350px;
+}
+
+#operators {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+button {
     background-color: #ff5722;
     margin: 10px 0;
     padding: 14px;
     width: 100px;
     font-size: 20px;
+    border-radius: 5px;
 }
