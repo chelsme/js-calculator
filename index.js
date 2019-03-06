@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let num1 = ''
     let num2 = ''
     let result = ''
+    let math = ''
     let screen = document.getElementById('screenDisplay')
 
     function clickHandler(event, name) {
@@ -103,6 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
             removed = screen.innerText.slice(0, -1)
             screen.innerText = removed
             hold = removed
+            if (num2 != '') {
+                num2 = removed
+            }
+            doMath(math)
         } else {
             screen.innerText = 0
             hold = 0
